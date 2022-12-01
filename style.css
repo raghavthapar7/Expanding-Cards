@@ -6,6 +6,7 @@
 
 html {
   font-family: "Roboto", sans-serif;
+  color: #fff;
 }
 
 body {
@@ -34,4 +35,22 @@ body {
 
 .panel--5 {
   background-image: url(https://images.unsplash.com/photo-1559595500-e15296bdbb48?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1331&q=80);
+}
+
+.container {
+  display: flex;
+  width: 90vw;
+  justify-content: center;
+}
+
+.panel {
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 30px;
+  height: 80vh;
+  flex: 0.5;
+  margin: 10px;
+  position: relative;
+  /* This is so that we can position the H3s at the bottom */
 }
