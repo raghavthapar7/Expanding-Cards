@@ -54,6 +54,7 @@ body {
   position: relative;
   /* This is so that we can position the H3s at the bottom */
   transition: flex 0.5s ease-in;
+  cursor: pointer;
 }
 
 .panel h3 {
@@ -71,6 +72,7 @@ body {
 
 .panel.active h3 {
   opacity: 100%;
+  transition: opacity 0.3s ease-in 0.4s;
 }
 
 @media (max-width: 600px) {
