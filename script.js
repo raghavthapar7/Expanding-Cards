@@ -18,11 +18,13 @@ panels.forEach((panel) => {
 rightbtn.addEventListener("click", function () {
   panels[activePanelIndex].classList.remove("active");
   activePanelIndex++;
+  if (activePanelIndex > 4) activePanelIndex = 0;
   panels[activePanelIndex].classList.add("active");
 });
 
 leftbtn.addEventListener("click", function () {
   panels[activePanelIndex].classList.remove("active");
   activePanelIndex--;
+  if (activePanelIndex < 0) activePanelIndex = 4;
   panels[activePanelIndex].classList.add("active");
 });
